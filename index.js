@@ -9,24 +9,26 @@ const port = process.argv[2] || 3000;
 app.get('/:timestamp', (request, response) => {
   const timestamp = request.params.timestamp;
 
+  let result = {};
+
   if (moment.unix(timestamp).isValid()) {
-    response.end(JSON.stringify({
+    result = {
       unix: parseInt(timestamp),
       natural: moment.unix(timestamp).format('MMMM D, YYYY')
-    }));
-
+    }
   } else if (moment(new Date(timestamp)).isValid()) {
-    response.end(JSON.stringify({
+    result = {
       unix: moment(new Date(timestamp)).format('X'),
       natural: moment(new Date(timestamp)).format('MMMM D, YYYY')
-    }));
-
+    }
   } else {
-    response.end(JSON.stringify({
+    result = {
       unix: null,
       natural: null
-    }));
+    }
   }
+
+  response.end(JSON.stringify(result));
 });
 
 app.listen(port, () => {
