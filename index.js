@@ -28,7 +28,7 @@ app.get('/:timestamp', (request, response) => {
     }
   }
 
-  response.end(JSON.stringify(result));
+  response.json(result);
 });
 
 app.listen(port, () => {
