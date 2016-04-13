@@ -10,6 +10,8 @@ Written by: [Nicholas Asimov](https://www.freecodecamp.com/nicholasasimov)
 
 ### Example usage
 ```
-https://timestamp-ms.herokuapp.com/December%2015,%202015
-https://timestamp-ms.herokuapp.com/1450137600
+https://get-timestamp.herokuapp.com/December%2015,%202015
+https://get-timestamp.herokuapp.com/1450137600
 ```
+
+### [Live Website](https://get-timestamp.herokuapp.com/)
