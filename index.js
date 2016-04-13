@@ -37,7 +37,7 @@ app.get('/:timestamp', (request, response) => {
   response.json(result);
 });
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3000, function() {
   /* eslint-disable no-console */
   console.log(`Server listening on port ${this.address().port}...`);
   /* eslint-enable no-console */
