@@ -19,7 +19,8 @@
   "homepage": "https://github.com/NicholasAsimov/timestamp-microservice#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "moment": "^2.12.0"
+    "moment": "^2.12.0",
+    "pug": "^2.0.0-alpha3"
   },
   "devDependencies": {
     "eslint": "^2.7.0",

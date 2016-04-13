@@ -6,6 +6,13 @@ const moment = require('moment');
 const app = express();
 const port = process.argv[2] || 3000;
 
+app.set('views', './views');
+app.set('view engine', 'pug');
+
+app.get('/', (request, response) => {
+  response.render('index');
+});
+
 app.get('/:timestamp', (request, response) => {
   const timestamp = request.params.timestamp;
 
