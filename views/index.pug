@@ -5,18 +5,20 @@ html(lang="en")
     link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css", rel="stylesheet", integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX", crossorigin="anonymous")
   body
     .container
-      .test
-        h1(style="margin-bottom: 15px;") API Basejump: Timestamp microservice
-        p Written by: #[a(href="https://www.freecodecamp.com/nicholasasimov") Nicholas Asimov]
-        blockquote
-          h3 User stories:
-          ol
-            li I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
-            li If it does, it returns both the Unix timestamp and the natural language form of that date.
-            li If it does not contain a date or Unix timestamp, it returns null for those properties.
-        h3 Example usage:
-        code https://get-timestamp.herokuapp.com/December%2015,%202015
-        br
-        code https://get-timestamp.herokuapp.com/1450137600
-        h3 Example output:
-        code { "unix": 1450137600, "natural": "December 15, 2015" }
+      h1(style="margin-bottom: 15px;") API Basejump: Timestamp microservice
+      p Written by: #[a(href="https://www.freecodecamp.com/nicholasasimov") Nicholas Asimov]
+
+      blockquote
+        h3 User stories:
+        ol
+          li I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+          li If it does, it returns both the Unix timestamp and the natural language form of that date.
+          li If it does not contain a date or Unix timestamp, it returns null for those properties.
+
+      h3 Example usage:
+      code https://get-timestamp.herokuapp.com/December%2015,%202015
+      br
+      code https://get-timestamp.herokuapp.com/1450137600
+
+      h3 Example output:
+      code { "unix": 1450137600, "natural": "December 15, 2015" }
